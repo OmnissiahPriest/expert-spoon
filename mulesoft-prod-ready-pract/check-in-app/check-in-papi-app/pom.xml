@@ -10,7 +10,7 @@
 	</parent>
 
 
-	<groupId>com.mulesoft.training.anyairline</groupId>
+	<groupId>d9e460e8-323a-4ef6-bb7b-993713bcf89f</groupId>
 	<artifactId>check-in-papi-app</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
