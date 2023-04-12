@@ -33,11 +33,43 @@
 				<version>3.2.0</version>
 			</plugin>
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-
-				<extensions>true</extensions>
-			</plugin>
+					<groupId>org.mule.tools.maven</groupId>
+					<artifactId>mule-maven-plugin</artifactId>
+					<version>${mule.maven.plugin.version}</version>
+					<extensions>true</extensions>
+					<configuration>
+						<cloudhub2Deployment>
+							<uri>https://anypoint.mulesoft.com</uri>
+							<businessGroupId>YOUR_OWN_ID</businessGroupId>
+							<environment>Sandbox</environment>
+							<target>Cloudhub-US-East-2</target>
+							<provider>MC</provider>
+							<server>cloudhub-deploy</server>							<!-- reads credentials from settings.xml -->
+							<applicationName>YOUR_APP_NAME</applicationName>
+							<replicas>1</replicas>
+							<vCores>0.1</vCores>
+							<deploymentTimeout>240000</deploymentTimeout>
+							<properties>
+								<anypoint.platform.client_id>${ap.client_id}</anypoint.platform.client_id>
+								<anypoint.platform.client_secret>${ap.client_secret}</anypoint.platform.client_secret>
+							</properties>
+							<deploymentSettings>
+								<http>
+									<inbound>
+										<lastMileSecurity>true</lastMileSecurity>
+									</inbound>
+								</http>
+							</deploymentSettings>
+							<integrations>
+								<services>
+									<objectStoreV2>
+										<enabled>true</enabled>
+									</objectStoreV2>
+								</services>
+							</integrations>
+						</cloudhub2Deployment>
+					</configuration>
+				</plugin>
 		</plugins>
 	</build>
 
