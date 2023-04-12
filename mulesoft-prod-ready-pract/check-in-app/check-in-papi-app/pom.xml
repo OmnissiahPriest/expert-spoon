@@ -40,12 +40,12 @@
 					<configuration>
 						<cloudhub2Deployment>
 							<uri>https://anypoint.mulesoft.com</uri>
-							<businessGroupId>YOUR_OWN_ID</businessGroupId>
+							<businessGroupId>d9e460e8-323a-4ef6-bb7b-993713bcf89f</businessGroupId>
 							<environment>Sandbox</environment>
 							<target>Cloudhub-US-East-2</target>
 							<provider>MC</provider>
 							<server>cloudhub-deploy</server>							<!-- reads credentials from settings.xml -->
-							<applicationName>YOUR_APP_NAME</applicationName>
+							<applicationName>check-in-auto</applicationName>
 							<replicas>1</replicas>
 							<vCores>0.1</vCores>
 							<deploymentTimeout>240000</deploymentTimeout>
