@@ -42,4 +42,4 @@ jobs:
           
       # maven build command, could add other flags if needed
       - name: Build
-        run: mvn -B clean package --file mulesoft-prod-ready-pract\check-in-app\check-in-papi-app/pom.xml
+        run: mvn -B clean package --file mulesoft-prod-ready-pract/check-in-app/check-in-papi-app/pom.xml
