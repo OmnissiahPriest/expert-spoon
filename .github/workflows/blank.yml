@@ -64,6 +64,7 @@ jobs:
                 "password": "${{ secrets.RELEASES_PASSWORD }}"
             }
             ]
+            
           
 
       # maven build command, could add other flags if needed
