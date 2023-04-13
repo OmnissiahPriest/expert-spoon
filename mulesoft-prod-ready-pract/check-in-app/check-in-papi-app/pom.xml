@@ -12,7 +12,7 @@
 
 	<groupId>d9e460e8-323a-4ef6-bb7b-993713bcf89f</groupId>
 	<artifactId>check-in-papi-app</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>check-in-papi-app</name>
