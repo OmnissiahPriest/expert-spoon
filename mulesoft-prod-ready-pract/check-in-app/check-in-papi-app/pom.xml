@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>d9e460e8-323a-4ef6-bb7b-993713bcf89f</groupId>
 		<artifactId>solutions-parent-pom</artifactId>
-		<version>1.0.2</version>
+		<version>1.0.1</version>
 		<relativePath>../../../parent-pom/pom.xml</relativePath>
 	</parent>
 
